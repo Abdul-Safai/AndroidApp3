@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/compassRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020617">
+
+    <!-- Top app bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCompass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#111827"
+        android:padding="16dp"
+        app:title="@string/compass_title"
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Circular container for compass -->
+    <FrameLayout
+        android:id="@+id/compassContainer"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/compass_circle_bg"
+        app:layout_constraintTop_toBottomOf="@id/toolbarCompass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/compassImage"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:src="@drawable/compass"
+            android:contentDescription="@string/compass_image_desc"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+    <!-- Bearing text -->
+    <TextView
+        android:id="@+id/bearingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/compass_bearing_default"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/compassContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Back to Main Page"
+        android:textColor="#111827"
+        android:textSize="16sp"
+        android:background="@drawable/white_button_bg"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/bearingText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

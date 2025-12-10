@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SmartRoute GPS</string>
+
+    <!-- Main screen -->
+    <string name="gps_location_title">SmartRoute GPS</string>
+    <string name="latitude_longitude">Latitude / Longitude / Speed / Altitude</string>
+
+    <string name="current_address_placeholder">Current Address: —</string>
+    <string name="home_address_placeholder">Home Address: not set yet</string>
+    <string name="distance_placeholder">Distance from home: —</string>
+
+    <string name="home_address_input_hint">Enter an address to locate</string>
+
+    <string name="button_locate">Calculate Distance</string>
+    <string name="button_set_home">Add Home Address</string>
+    <string name="button_refresh">Refresh Location</string>
+    <string name="button_compass">Open Compass</string>
+
+    <!-- Compass -->
+    <string name="compass_title">SmartRoute Compass</string>
+    <string name="compass_image_desc">Compass image</string>
+    <string name="compass_bearing_default">Compass bearing: 0°</string>
+    <string name="compass_bearing_0">Compass Bearing: 0°</string>
+
+    <!-- Menu -->
+    <string name="menu_compass">Compass</string>
+</resources>
